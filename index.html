@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>My first Svelte app</title>
+</head>
+<body>
+	<h1>This arrow is from index directly: &rarr;</h1>
+  <main></main>
+  <script src='HelloWorld.js'></script>
+  <script>
+    var app = new HelloWorld({
+      target: document.querySelector( 'main' ),
+      data: {
+        name: 'world'
+      }
+    });
+  </script>
+</body>
+</html>
